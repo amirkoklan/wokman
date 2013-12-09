@@ -1,0 +1,19 @@
+#content-message
+{
+    width:48%;
+    height: 48%;
+    float: left;
+    margin:5px;
+    overflow: hidden;
+    zoom: 0.8;
+    -moz-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+}
+#print
+{
+    display: none;
+}
+#print-photo
+{
+    display: none;
+}
