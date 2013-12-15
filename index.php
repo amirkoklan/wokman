@@ -88,7 +88,7 @@ return $result;
                         } else {
                         // Get our messages from the last week
                         // Instead of searching for this week's message you could search for all the messages in your inbox using: $emails = imap_search($stream,'ALL');
-                        $emails = imap_search($stream, 'SINCE '. date('d-M-Y',strtotime("-3 day")));
+                        $emails = imap_search($stream, 'SINCE '. date('d-M-Y',strtotime("-2 day")));
 
                         if (!count($emails)){
                         ?>
