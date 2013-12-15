@@ -1,8 +1,12 @@
+body
+{
+    background-color: darkgray;
+}
 #wrapper
 {
-    color:red;
+    color:black;
 }
-#print
+.print
 {
     float: right;
 }

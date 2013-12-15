@@ -54,6 +54,7 @@ return $result;
         <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
         <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
         <script type="text/javascript" src="JS/code.js"></script>
+        <link rel="shortcut icon" href="images/favicon.ico">
         <link rel="stylesheet" type="text/css" href="css/content.css" media="screen">
         <link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
@@ -114,8 +115,9 @@ return $result;
                                 <span class="from" title="<?= decode_imap_text($overview[0]->from) ?>"><?= decode_imap_text($overview[0]->from) ?></span>
                                 <span class="date"><?= date("D Y-m-d H:i:s", strtotime($overview[0]->date)) ?></span></h3>
                             <div id="message<?= $email_id ?>">
-                                <div id="content-message"><?= $message ?></div>
-                                <a href="#" id="print" onclick="print(<?= $email_id ?>);"><img src="images/Printer.png" id="print-photo" alt="printer" width="80" hight="80"></a>
+                                <div class="content-message"><?= $message ?></div>
+                                <a href="#" class="print" onclick="print4(<?= $email_id ?>);"><img src="images/Printer.png" id="print-photo" alt="printer" width="80" hight="80"></a>
+                                <a href="#" class="print" onclick="print(<?= $email_id ?>);"><img src="images/Printer.png" id="print-photo" alt="printer" width="80" hight="80"></a>
                             </div>
                             <?
                             }?>

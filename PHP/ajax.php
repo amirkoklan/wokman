@@ -17,12 +17,13 @@ function fetch_unread($mailbox, $username, $password) {
                 } else {
                     $message_unread = imap_fetchbody($connection, $email_id, 1);
                 }
-            $output .= '<h3><div class="email_item clearfix read"><span class="subject" title="' . $overview_unread[0]->subject . '">' . $overview_unread[0]->subject . '</span>
+                $output .= '<h3><div class="email_item clearfix read"><span class="subject" title="' . $overview_unread[0]->subject . '">' . $overview_unread[0]->subject . '</span>
             <span class="from" title="' . $overview_unread[0]->from . '">' . $overview_unread[0]->from . '</span>
             <span class="date">' . date("D Y-m-d H:i:s", strtotime($overview_unread[0]->date)) . '</span></div></h3>
             <div id="message' . $email_id . '">
-                <div id="content-message">' . $message_unread . '</div>
-            <a href="#" id="print" onclick="print(' . $email_id . ');"><img src="images/Printer.png" alt="printer" width="80" hight="80"></a>
+                <div class="content-message">' . $message_unread . '</div>
+            <a href="#" class="print" onclick="print4(' . $email_id . ');"><img src="images/Printer.png" alt="printer" width="80" hight="80"></a>
+            <a href="#" class="print" onclick="print(' . $email_id . ');"><img src="images/Printer.png" alt="printer" width="80" hight="80"></a>
             </div>';
             }
         }
