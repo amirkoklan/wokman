@@ -12,8 +12,8 @@
 
 // general password protection
 // leave blank if you don't want to protect this page
-$pageauth['username'] = 'demo';
-$pageauth['password'] = 'demo123';
+$pageauth['username'] = 'abbas';
+$pageauth['password'] = 'arwin';
 
 
 // configure your imap mailboxes
