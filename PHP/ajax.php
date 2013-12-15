@@ -4,7 +4,7 @@ fetch_unread('{imap.gmail.com:993/imap/ssl}INBOX', 'wokmanlieferservice@gmail.co
 
 function fetch_unread($mailbox, $username, $password) {
     $connection = imap_open($mailbox, $username, $password);
-    $emails = imap_search($connection, 'SINCE ' . date('d-M-Y', strtotime("-3 day")));
+    $emails = imap_search($connection, 'SINCE ' . date('d-M-Y', strtotime("-2 day")));
     if (count($emails)) {
         rsort($emails);
         foreach ($emails as $email_id) {
@@ -28,5 +28,6 @@ function fetch_unread($mailbox, $username, $password) {
             }
         }
     }
-    echo $output;
+    if (!empty($output)){
+    echo $output;}
 }
