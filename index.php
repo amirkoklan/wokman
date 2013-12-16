@@ -1,15 +1,4 @@
 <?
-##################################################################
-# IMAP Inbox Notifier 
-# by Nikos Tsaganos
-# http://www.backslash.gr - nikos@backslash.gr 
-# 
-# DISCLAIMER:
-# This is a demo on how to use some imap php functions. 
-# It is NOT recommended to store your passwords in an 
-# unencoded php file on a shared server.
-##################################################################
-
 // general password protection
 // leave blank if you don't want to protect this page
 $pageauth['username'] = 'abbas';
@@ -116,7 +105,7 @@ return $result;
                                 <span class="date"><?= date("D Y-m-d H:i:s", strtotime($overview[0]->date)) ?></span></h3>
                             <div id="message<?= $email_id ?>">
                                 <div class="content-message"><?= $message ?></div>
-                                <a href="#" class="print" onclick="print4(<?= $email_id ?>);"><img src="images/Printer.png" id="print-photo" alt="printer" width="80" hight="80"></a>
+                                <a href="#" class="print" onclick="print4(<?= $email_id ?>);"><img src="images/Printer-4.png" id="print-photo" alt="printer" width="80" hight="80"></a>
                                 <a href="#" class="print" onclick="print(<?= $email_id ?>);"><img src="images/Printer.png" id="print-photo" alt="printer" width="80" hight="80"></a>
                             </div>
                             <?

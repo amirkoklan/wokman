@@ -22,7 +22,7 @@ function fetch_unread($mailbox, $username, $password) {
             <span class="date">' . date("D Y-m-d H:i:s", strtotime($overview_unread[0]->date)) . '</span></div></h3>
             <div id="message' . $email_id . '">
                 <div class="content-message">' . $message_unread . '</div>
-            <a href="#" class="print" onclick="print4(' . $email_id . ');"><img src="images/Printer.png" alt="printer" width="80" hight="80"></a>
+            <a href="#" class="print" onclick="print4(' . $email_id . ');"><img src="images/Printer-4.png" alt="printer" width="80" hight="80"></a>
             <a href="#" class="print" onclick="print(' . $email_id . ');"><img src="images/Printer.png" alt="printer" width="80" hight="80"></a>
             </div>';
             }
