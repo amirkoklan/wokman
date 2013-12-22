@@ -1,9 +1,4 @@
 <?
-// general password protection
-// leave blank if you don't want to protect this page
-$pageauth['username'] = 'abbas';
-$pageauth['password'] = 'arwin';
-
 
 // configure your imap mailboxes
 $mailboxes = array(
@@ -15,16 +10,6 @@ array(
 'password' 	=> 'arwinramin'
 )
 );
-
-if ($pageauth['username'] && $pageauth['password']) {
-if(($_SERVER["PHP_AUTH_USER"]!==$pageauth['username']) || ( $_SERVER["PHP_AUTH_PW"]!==$pageauth['password'])){
-header("WWW-Authenticate: Basic realm=Protected area" );
-header("HTTP/1.0 401 Unauthorized");
-echo "Protected area";
-exit;
-}
-}
-
 
 // a function to decode MIME message header extensions and get the text
 function decode_imap_text($str){

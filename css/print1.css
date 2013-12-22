@@ -7,6 +7,10 @@ and open the template in the editor.
     Created on : 15-Dec-2013, 12:52:44
     Author     : Amir
 */
+html,body
+{
+    background-color: white!important;
+}
 .print 
 {
     display: none;
